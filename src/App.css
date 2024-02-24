@@ -1,0 +1,71 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.planets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.planet-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.planet-card:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.planet-card h2 {
+  color: #333;
+}
+
+.planet-card p {
+  color: #666;
+  margin: 8px 0;
+}
+
+.residents-list {
+  margin-top: 16px;
+}
+
+.residents-list li {
+  list-style: none;
+  padding: 8px 0;
+  border-top: 1px solid #ddd;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.pagination button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
